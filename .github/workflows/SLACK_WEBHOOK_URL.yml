@@ -18,5 +18,5 @@ jobs:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
           curl -X POST -H 'Content-type: application/json' --data '{
-            "text": "Push to the main branch detected in the GitHub repository."
+            "text": "Push to the master branch detected in the GitHub repository."
           }' $SLACK_WEBHOOK_URL
